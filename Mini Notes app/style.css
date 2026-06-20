@@ -41,8 +41,11 @@ body {
 }
 
 .upper-prt p {
-    font-size: 14.2px;
-    opacity: 0.55;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Playfair display';
+    opacity: 0.8;
+    letter-spacing: 0.4px;
 }
 
 .input-fields {
@@ -74,13 +77,13 @@ body {
 
 .input-fields button {
     border: none;
-    background: #8a2be2;
+    background: firebrick;
     color: white;
     padding: 10px 22px;
-    font-size: 14.5px;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 5px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Playfair display', sans-serif;
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -103,18 +106,9 @@ body {
     overflow-y: auto;
 }
 
-.lower-prt::-webkit-scrollbar {
-    width: 6px;
-}
-
-.lower-prt::-webkit-scrollbar-thumb {
-    background: #ddd;
-    border-radius: 10px;
-}
-
 .note {
     border: 1px solid #ececec;
-    border-top: 3px solid gold;
+    border-top: 3px solid firebrick;
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 14.5px;
@@ -123,7 +117,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #fffdf7;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: 0.15s ease;
 }
 
 .note:hover {
