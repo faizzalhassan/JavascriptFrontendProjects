@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background: #ece9f7;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 480px;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #cccc;
+}
+
+.upper-prt h2 {
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 6px;
+    color: #2b2b2b;
+    letter-spacing: -0.5px;
+}
+
+.upper-prt p {
+    font-size: 14.2px;
+    opacity: 0.55;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 24px 0 8px;
+}
+
+.input-fields input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 14.5px;
+    border: 1.5px solid #e2e2e2;
+    border-radius: 5px;
+    outline: none;
+    background: #fafafa;
+    transition: all 0.2s;
+}
+
+.input-fields input:focus {
+    border-color: blueviolet;
+    background: #fff;
+}
+
+.input-fields input::placeholder {
+    color: #aaa;
+}
+
+.input-fields button {
+    border: none;
+    background: #8a2be2;
+    color: white;
+    padding: 10px 22px;
+    font-size: 14.5px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-fields button:hover {
+    transform: translateY(-1px);
+}
+
+.input-fields button:active {
+    scale: 0.97;
+    transform: translateY(0);
+}
+
+.lower-prt {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.lower-prt::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lower-prt::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.note {
+    border: 1px solid #ececec;
+    border-top: 3px solid gold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14.5px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffdf7;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.note:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+}
+
+.delete-icon {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #999;
+    padding: 4px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.delete-icon:hover {
+    background: rgb(252, 109, 109);
+    color: rgb(109, 2, 2);
+}
